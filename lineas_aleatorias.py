@@ -43,8 +43,14 @@ while 1:
     ventana.blit(texto,(155,455))
 
 
-
-    pygame.draw.line(ventana, negro, (100,100),(300,300))
+    # líneas random
+    for i in range(100):
+        coordenadax1 = random.randint(30, 435)
+        coordenaday1 = random.randint(30, 435)
+        coordenadax2 = random.randint(30, 435)
+        coordenaday2 = random.randint(30, 435)
+        color = (random.randint(0,255), random.randint(0,255), random.randint(0,255))
+        pygame.draw.line(ventana, color, (coordenadax1, coordenaday1), (coordenadax2, coordenaday2), 2)
 
 
     pygame.display.flip()
