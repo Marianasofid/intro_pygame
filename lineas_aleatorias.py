@@ -45,10 +45,10 @@ while 1:
 
     # líneas random
     for i in range(100):
-        coordenadax1 = random.randint(30, 435)
-        coordenaday1 = random.randint(30, 435)
-        coordenadax2 = random.randint(30, 435)
-        coordenaday2 = random.randint(30, 435)
+        coordenadax1 = random.randint(45, 435)
+        coordenaday1 = random.randint(45, 435)
+        coordenadax2 = random.randint(45, 435)
+        coordenaday2 = random.randint(45, 435)
         color = (random.randint(0,255), random.randint(0,255), random.randint(0,255))
         pygame.draw.line(ventana, color, (coordenadax1, coordenaday1), (coordenadax2, coordenaday2), 2)
 
